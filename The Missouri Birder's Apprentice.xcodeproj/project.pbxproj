@@ -12,6 +12,7 @@
 		3F942AEE1F91C43500BAC5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F942AEC1F91C43500BAC5A4 /* Main.storyboard */; };
 		3F942AF01F91C43500BAC5A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F942AEF1F91C43500BAC5A4 /* Assets.xcassets */; };
 		3F942AF31F91C43500BAC5A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F942AF11F91C43500BAC5A4 /* LaunchScreen.storyboard */; };
+		3F942B1A1F9283CA00BAC5A4 /* BirdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F942B191F9283CA00BAC5A4 /* BirdsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3F942AEF1F91C43500BAC5A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F942AF21F91C43500BAC5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F942AF41F91C43500BAC5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F942B191F9283CA00BAC5A4 /* BirdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3F942AEF1F91C43500BAC5A4 /* Assets.xcassets */,
 				3F942AF11F91C43500BAC5A4 /* LaunchScreen.storyboard */,
 				3F942AF41F91C43500BAC5A4 /* Info.plist */,
+				3F942B191F9283CA00BAC5A4 /* BirdsViewController.swift */,
 			);
 			path = "The Missouri Birder's Apprentice";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F942AEB1F91C43500BAC5A4 /* CountriesViewController.swift in Sources */,
+				3F942B1A1F9283CA00BAC5A4 /* BirdsViewController.swift in Sources */,
 				3F942AE91F91C43500BAC5A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
