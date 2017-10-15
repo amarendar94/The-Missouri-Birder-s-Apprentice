@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		3F942AE91F91C43500BAC5A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F942AE81F91C43500BAC5A4 /* AppDelegate.swift */; };
-		3F942AEB1F91C43500BAC5A4 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F942AEA1F91C43500BAC5A4 /* CountriesViewController.swift */; };
 		3F942AEE1F91C43500BAC5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F942AEC1F91C43500BAC5A4 /* Main.storyboard */; };
 		3F942AF01F91C43500BAC5A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F942AEF1F91C43500BAC5A4 /* Assets.xcassets */; };
 		3F942AF31F91C43500BAC5A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F942AF11F91C43500BAC5A4 /* LaunchScreen.storyboard */; };
-		3F942B1A1F9283CA00BAC5A4 /* BirdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F942B191F9283CA00BAC5A4 /* BirdsViewController.swift */; };
+		3FFCD8671F93020C0011C737 /* BirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCD8661F93020C0011C737 /* BirdViewController.swift */; };
+		3FFCD8691F93A9770011C737 /* dataFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCD8681F93A9770011C737 /* dataFiles.swift */; };
+		3FFCD86D1F93AA1B0011C737 /* BirdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCD86C1F93AA1B0011C737 /* BirdsTableViewController.swift */; };
+		3FFCD88F1F93B2680011C737 /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCD88E1F93B2680011C737 /* CountriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F942AE51F91C43500BAC5A4 /* The Missouri Birder's Apprentice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Missouri Birder's Apprentice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F942AE81F91C43500BAC5A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F942AEA1F91C43500BAC5A4 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
 		3F942AED1F91C43500BAC5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F942AEF1F91C43500BAC5A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F942AF21F91C43500BAC5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F942AF41F91C43500BAC5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F942B191F9283CA00BAC5A4 /* BirdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsViewController.swift; sourceTree = "<group>"; };
+		3FFCD8661F93020C0011C737 /* BirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdViewController.swift; sourceTree = "<group>"; };
+		3FFCD8681F93A9770011C737 /* dataFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataFiles.swift; sourceTree = "<group>"; };
+		3FFCD86C1F93AA1B0011C737 /* BirdsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsTableViewController.swift; sourceTree = "<group>"; };
+		3FFCD88E1F93B2680011C737 /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				3F942AE81F91C43500BAC5A4 /* AppDelegate.swift */,
-				3F942AEA1F91C43500BAC5A4 /* CountriesViewController.swift */,
+				3FFCD8661F93020C0011C737 /* BirdViewController.swift */,
 				3F942AEC1F91C43500BAC5A4 /* Main.storyboard */,
 				3F942AEF1F91C43500BAC5A4 /* Assets.xcassets */,
 				3F942AF11F91C43500BAC5A4 /* LaunchScreen.storyboard */,
 				3F942AF41F91C43500BAC5A4 /* Info.plist */,
-				3F942B191F9283CA00BAC5A4 /* BirdsViewController.swift */,
+				3FFCD8681F93A9770011C737 /* dataFiles.swift */,
+				3FFCD86C1F93AA1B0011C737 /* BirdsTableViewController.swift */,
+				3FFCD88E1F93B2680011C737 /* CountriesTableViewController.swift */,
 			);
 			path = "The Missouri Birder's Apprentice";
 			sourceTree = "<group>";
@@ -139,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F942AEB1F91C43500BAC5A4 /* CountriesViewController.swift in Sources */,
-				3F942B1A1F9283CA00BAC5A4 /* BirdsViewController.swift in Sources */,
+				3FFCD8691F93A9770011C737 /* dataFiles.swift in Sources */,
 				3F942AE91F91C43500BAC5A4 /* AppDelegate.swift in Sources */,
+				3FFCD8671F93020C0011C737 /* BirdViewController.swift in Sources */,
+				3FFCD88F1F93B2680011C737 /* CountriesTableViewController.swift in Sources */,
+				3FFCD86D1F93AA1B0011C737 /* BirdsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
