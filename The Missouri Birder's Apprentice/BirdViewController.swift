@@ -10,6 +10,8 @@ import UIKit
 
 class BirdViewController: UIViewController {
 
+    var brd:String!
+    
     @IBOutlet weak var locationLBL: UILabel!
     @IBOutlet weak var dateLBL: UILabel!
     @IBOutlet weak var sightingsLBL: UITextField!
@@ -21,8 +23,10 @@ class BirdViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = brd
         // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

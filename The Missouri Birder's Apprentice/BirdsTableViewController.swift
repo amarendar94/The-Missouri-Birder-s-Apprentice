@@ -36,4 +36,20 @@ class BirdsTableViewController: UIViewController,UITableViewDelegate,UITableView
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Now we instantiate a CitiesFlownTableViewController, where we will display a list of cities flown
+        
+        let birdVC:BirdViewController = BirdViewController()
+        
+        // Examine CitiesFlownTableViewController -- you will see it defines an airline property that we configure here
+        // so that by the time that TVC becomes visible, the airline's property & cities will be displayed to the user
+        
+        birdVC.brd = birds[indexPath.row]
+        
+        // Every UIViewController, if it is part of a UINavigationController stack, has a navigationController property that references that
+        // UINavigationController.  This is quite handy, when we want to push a new view controller
+        self.navigationController?.pushViewController(birdVC, animated: true)
+    }
 }
