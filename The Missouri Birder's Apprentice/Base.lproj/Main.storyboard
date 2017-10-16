@@ -149,6 +149,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DCh-Uh-YD1"/>
                     <connections>
+                        <outlet property="birdImage" destination="VZg-el-IfY" id="oWF-0t-1HP"/>
                         <outlet property="dateLBL" destination="9lg-Tw-RfE" id="9jG-aT-yFn"/>
                         <outlet property="locationLBL" destination="yPg-Qg-NcV" id="uqc-3r-m15"/>
                         <outlet property="sightingsLBL" destination="hZe-uS-X03" id="YrE-4c-oCd"/>

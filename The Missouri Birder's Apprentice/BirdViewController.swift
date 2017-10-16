@@ -10,23 +10,29 @@ import UIKit
 
 class BirdViewController: UIViewController {
 
-    var brd:String!
+    var brd:Bird!
     
     @IBOutlet weak var locationLBL: UILabel!
     @IBOutlet weak var dateLBL: UILabel!
     @IBOutlet weak var sightingsLBL: UITextField!
     
+    @IBOutlet weak var birdImage: UIImageView!
     
     @IBAction func updateSightingsBTN(_ sender: Any) {
         
     }
     
+//    locationLBL.text = "location"
+//    dateLBL.text = "date"
+//    sightingsLBL.text = "sightings"
+//    birdImage.image = #imageLiteral(resourceName: "bird")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = brd
+        self.navigationItem.title = brd.name
+        
+        
         // Do any additional setup after loading the view.
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
