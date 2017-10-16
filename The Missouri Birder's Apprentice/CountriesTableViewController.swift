@@ -21,19 +21,19 @@ import UIKit
         }
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return State.countryArray.count
+            return State.countries.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "countries_cell", for: indexPath)
-            cell.textLabel?.text = State.countryArray[indexPath.row].countryName
+            cell.textLabel?.text = State.countries[indexPath.row].name
             return cell
         }
         
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
             let birdsTVC:BirdsTableViewController = BirdsTableViewController()
-            birdsTVC.cntry = State.countryArray[indexPath.row]
+            birdsTVC.country = State.countries[indexPath.row]
 
             self.navigationController?.pushViewController(birdsTVC, animated: true)
         }

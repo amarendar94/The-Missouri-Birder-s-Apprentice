@@ -10,7 +10,7 @@ import UIKit
 
 class BirdViewController: UIViewController {
 
-    var brd:Bird!
+    var bird:Bird!
     
     @IBOutlet weak var locationLBL: UILabel!
     @IBOutlet weak var dateLBL: UILabel!
@@ -20,19 +20,19 @@ class BirdViewController: UIViewController {
     
     @IBAction func updateSightingsBTN(_ sender: Any) {
 //        if  let sightingsLBL.text {
-        brd.updateNumSightings(sightings:Int(sightingsLBL.text!)!)
+        bird.updateNumSightings(sightings:Int(sightingsLBL.text!)!)
         self.sightingsLBL.resignFirstResponder()
         viewDidLoad()
 //        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = brd.name!
-            locationLBL.text = "\(brd.location.latitude), \(brd.location.longitude)"
+        self.navigationItem.title = bird.name!
+            locationLBL.text = "\(bird.location.latitude), \(bird.location.longitude)"
         
-            dateLBL.text = "\(brd.dateFirstSighted.month!)/\(brd.dateFirstSighted.day!)/\(brd.dateFirstSighted.year!)/  \(brd.dateFirstSighted.hour!):\(brd.dateFirstSighted.minute!)"
-            sightingsLBL.text = "\(brd.noOfSightings!)"
-            birdImage.image = brd.img!
+            dateLBL.text = "\(bird.dateFirstSighted.month!)/\(bird.dateFirstSighted.day!)/\(bird.dateFirstSighted.year!)/  \(bird.dateFirstSighted.hour!):\(bird.dateFirstSighted.minute!)"
+            sightingsLBL.text = "\(bird.noOfSightings!)"
+            birdImage.image = bird.image!
         
         // Do any additional setup after loading the view.
     }
