@@ -33,7 +33,6 @@ import UIKit
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
             let birdsTVC:BirdsTableViewController = BirdsTableViewController()
-
             birdsTVC.cntry = State.countryArray[indexPath.row]
 
             self.navigationController?.pushViewController(birdsTVC, animated: true)

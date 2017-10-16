@@ -35,7 +35,9 @@ class BirdsTableViewController: UIViewController,UITableViewDelegate,UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let birdVC:BirdViewController = BirdViewController()
+        //let birdVC:BirdViewController = BirdViewController()
+//        let birdVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier:"bird_view_controller") as! BirdViewController]
+        let birdVC:BirdViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier:"bird_view_controller") as! BirdViewController
         
         birdVC.brd = cntry.birdsArray[indexPath.row]
         self.navigationController?.pushViewController(birdVC, animated: true)

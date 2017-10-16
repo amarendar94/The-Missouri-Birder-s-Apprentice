@@ -55,7 +55,7 @@
         <!--Bird View Controller-->
         <scene sceneID="z4y-p9-Csf">
             <objects>
-                <viewController id="AbF-BS-VgC" customClass="BirdViewController" customModule="The_Missouri_Birder_s_Apprentice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="bird_view_controller" id="AbF-BS-VgC" customClass="BirdViewController" customModule="The_Missouri_Birder_s_Apprentice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pWo-8C-j2l"/>
                         <viewControllerLayoutGuide type="bottom" id="mEb-7k-l4A"/>

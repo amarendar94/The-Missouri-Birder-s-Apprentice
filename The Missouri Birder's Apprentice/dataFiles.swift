@@ -19,8 +19,11 @@ class Bird:Equatable,CustomStringConvertible{
     var dateFirstSighted:DateComponents!
     var noOfSightings:Int!
     var img:UIImage!
-    func updateNumSightings(){
-        
+//    func updateNumSightings(sightings:Int){
+//        noOfSightings = sightings
+//    }
+    func updateNumSightings(sightings:Int){
+        noOfSightings! += 1
     }
     
     init(name:String, latinName:String, location:CLLocationCoordinate2D, dateFirstSighted:DateComponents, noOfSightings:Int, img:UIImage){
@@ -38,7 +41,7 @@ class Bird:Equatable,CustomStringConvertible{
     
     var description:String{
         //for temporary testing
-        return "hello"
+        return ""
     }
 
 }
