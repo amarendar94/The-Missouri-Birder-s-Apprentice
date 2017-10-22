@@ -21,7 +21,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Countries" id="Bjh-J2-S5O"/>
+                    <navigationItem key="navigationItem" title="Countries" id="Bjh-J2-S5O">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="izE-Y8-iE0">
+                            <connections>
+                                <segue destination="Ji1-fx-43F" kind="presentation" identifier="add_a_county" id="mz4-sl-duF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="rwi-su-Zjy" kind="show" identifier="country_birds" id="Kcb-jv-Dkb"/>
                     </connections>
@@ -29,6 +35,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Add Counties View Controller-->
+        <scene sceneID="Iww-O9-1FO">
+            <objects>
+                <viewController id="Ji1-fx-43F" customClass="AddCountiesViewController" customModule="The_Missouri_Birder_s_Apprentice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lIE-JY-5UO"/>
+                        <viewControllerLayoutGuide type="bottom" id="lRL-3Q-psc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5pv-LK-qK2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7N3-g2-lSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="840"/>
+        </scene>
+        <!--Add Bird View Controller-->
+        <scene sceneID="Qqb-is-pd7">
+            <objects>
+                <viewController id="NUi-vm-ebn" customClass="AddBirdViewController" customModule="The_Missouri_Birder_s_Apprentice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2xz-Wr-7EC"/>
+                        <viewControllerLayoutGuide type="bottom" id="90x-Pl-rkH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QCj-b1-5bm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPG-N9-D7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="846"/>
         </scene>
         <!--Birds Table View Controller-->
         <scene sceneID="ioU-KI-nCh">
@@ -43,7 +85,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bCK-Eq-3HX"/>
+                    <navigationItem key="navigationItem" id="bCK-Eq-3HX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1Pg-T4-gpO">
+                            <connections>
+                                <segue destination="NUi-vm-ebn" kind="presentation" identifier="add_a_bird" id="IJk-Kx-vkj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="AbF-BS-VgC" kind="show" identifier="birds_bird" id="Agu-zf-uHi"/>
                     </connections>

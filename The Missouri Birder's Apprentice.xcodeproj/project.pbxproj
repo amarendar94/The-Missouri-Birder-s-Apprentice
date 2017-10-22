@@ -16,6 +16,8 @@
 		3FFCD86D1F93AA1B0011C737 /* BirdsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCD86C1F93AA1B0011C737 /* BirdsTableViewController.swift */; };
 		3FFCD88F1F93B2680011C737 /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCD88E1F93B2680011C737 /* CountriesTableViewController.swift */; };
 		3FFCD8911F94C3DF0011C737 /* BirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCD8901F94C3DF0011C737 /* BirdTableViewCell.swift */; };
+		DEF091A91F9D5A28000AAA09 /* AddBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF091A81F9D5A28000AAA09 /* AddBirdViewController.swift */; };
+		DEF091AB1F9D5C79000AAA09 /* AddCountiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF091AA1F9D5C79000AAA09 /* AddCountiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		3FFCD86C1F93AA1B0011C737 /* BirdsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsTableViewController.swift; sourceTree = "<group>"; };
 		3FFCD88E1F93B2680011C737 /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 		3FFCD8901F94C3DF0011C737 /* BirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdTableViewCell.swift; sourceTree = "<group>"; };
+		DEF091A81F9D5A28000AAA09 /* AddBirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirdViewController.swift; sourceTree = "<group>"; };
+		DEF091AA1F9D5C79000AAA09 /* AddCountiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCountiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				3FFCD86C1F93AA1B0011C737 /* BirdsTableViewController.swift */,
 				3FFCD88E1F93B2680011C737 /* CountriesTableViewController.swift */,
 				3FFCD8901F94C3DF0011C737 /* BirdTableViewCell.swift */,
+				DEF091A81F9D5A28000AAA09 /* AddBirdViewController.swift */,
+				DEF091AA1F9D5C79000AAA09 /* AddCountiesViewController.swift */,
 			);
 			path = "The Missouri Birder's Apprentice";
 			sourceTree = "<group>";
@@ -152,8 +158,10 @@
 				3F942AE91F91C43500BAC5A4 /* AppDelegate.swift in Sources */,
 				3FFCD8911F94C3DF0011C737 /* BirdTableViewCell.swift in Sources */,
 				3FFCD8671F93020C0011C737 /* BirdViewController.swift in Sources */,
+				DEF091AB1F9D5C79000AAA09 /* AddCountiesViewController.swift in Sources */,
 				3FFCD88F1F93B2680011C737 /* CountriesTableViewController.swift in Sources */,
 				3FFCD86D1F93AA1B0011C737 /* BirdsTableViewController.swift in Sources */,
+				DEF091A91F9D5A28000AAA09 /* AddBirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
