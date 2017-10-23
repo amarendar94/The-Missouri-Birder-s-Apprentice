@@ -30,11 +30,14 @@ import UIKit
             return cell
         }
         
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let birdsTVC:BirdsTableViewController = BirdsTableViewController()
             birdsTVC.country = State.countries[indexPath.row]
-
+            Row.ix = indexPath.row
             self.navigationController?.pushViewController(birdsTVC, animated: true)
+        }
+        
+        override func viewWillAppear(_ animated:Bool){
+            tableView.reloadData()
         }
 }

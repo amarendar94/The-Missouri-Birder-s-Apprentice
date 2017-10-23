@@ -62,14 +62,30 @@ var b8 = Bird(name: "Chukar partridge", latinName: "Alectoris chukar", location:
 
 var b9 = Bird(name: "white-rumped swift", latinName: "Apus caffer", location: CLLocationCoordinate2D(latitude: 47.14,longitude: 17.25), dateFirstSighted: DateComponents(year: 1998, month: 10, day:07, hour: 06, minute: 38), noOfSightings: 215, image: #imageLiteral(resourceName: "White-rumped-Swift-20081215"))
 
-struct Country{
+class Country{
     var name:String
-    var adjective:String
     var birds:[Bird]
+    
+    init(name:String, birds:[Bird]){
+        self.name = name
+        self.birds = birds
+    }
+    
+    init(name:String){
+        self.name = name
+        self.birds = []
+    }
+
 }
 
 //var s1:Country = Country(counrryName:"India",birdsArray[b1])
 
 struct State{
-    static var countries:[Country] = [Country(name: "India", adjective:"Indian", birds: [b1, b4, b5]), Country(name: "America", adjective:"American", birds: [b2, b6, b7]), Country(name: "Europe", adjective:"European", birds: [b3, b8, b9])]
+    static var countries:[Country] = [Country(name: "India", birds: [b1, b4, b5]), Country(name: "America", birds: [b2, b6, b7]), Country(name: "Europe", birds: [b3, b8, b9])]
 }
+
+
+struct Row{
+    static var ix:Int = 0
+}
+

@@ -10,6 +10,19 @@ import UIKit
 
 class AddCountiesViewController: UIViewController {
 
+    @IBAction func cancelAddingCounties(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func addCounty(_ sender: Any) {
+        let countyToAdd = Country(name: countyToAddTF.text!)
+        State.countries.append(countyToAdd)
+        //var x = State.countries[3].name
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBOutlet weak var countyToAddTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
